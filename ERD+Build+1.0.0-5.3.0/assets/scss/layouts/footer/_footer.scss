@@ -14,7 +14,7 @@
 
 .footer {
     background-color: $footer-background;
-    border-top: container("border");
+    // border-top: container("border");
     padding: spacing("double") 0;
     position: relative;
 }
@@ -26,6 +26,10 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+.footer-container {
+    margin: 0 !important;
 }
 
 .footer-info {
