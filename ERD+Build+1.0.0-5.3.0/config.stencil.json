@@ -1,0 +1,10 @@
+{
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  },
+  "normalStoreUrl": "https://store-7xrg1ndguv.mybigcommerce.com",
+  "port": "8080"
+}
