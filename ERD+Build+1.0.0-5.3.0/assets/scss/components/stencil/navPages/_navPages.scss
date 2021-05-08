@@ -69,6 +69,7 @@
 .navPages {
     background-color: $navPages-backgroundColor;
     height: 100%;
+    margin: 0 3% !important;
     overflow-y: auto;
     padding: spacing("single");
 
@@ -79,7 +80,7 @@
         font-size: 0; // 1
         overflow-y: visible;
         padding: 0;
-        text-align: center;
+        text-align: left;
     }
 
     ul {

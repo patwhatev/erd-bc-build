@@ -7,9 +7,9 @@
         "title": "Footer Start",
         "brands": "Popular Brands",
         "navigate": "Navigate",
-        "info": "Info",
+        "info": " ",
         "categories": "Categories",
-        "call_us": "Call us at {phone_number}",
+        "call_us": "{phone_number}",
         "powered_by": "Powered by"
     },
     "home": {

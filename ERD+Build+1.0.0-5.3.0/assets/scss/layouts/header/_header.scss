@@ -35,7 +35,7 @@
 
 .header {
     background-color: $header-bg;
-    border-bottom: container("border");
+    // border-bottom: container("border");
     position: fixed;
     top: 0;
     width: 100%;
@@ -43,7 +43,7 @@
     height: $header-height;
 
     @include breakpoint("medium") {
-        border-bottom: container("border");
+        // border-bottom: container("border");
         overflow: visible;
         position: relative;
         height: auto;
@@ -62,8 +62,8 @@
 
 .header-logo {
     font-size: 0;   // 1
-    margin: 0 remCalc($header-toggle-width); // 2
-    text-align: center;
+    // margin: 0 remCalc($header-toggle-width); // 2
+    text-align: left;
     height: $header-height;
 
     @include breakpoint("small") { // 4
@@ -72,7 +72,7 @@
     }
 
     @include breakpoint("medium") {
-        margin: (spacing("double") + spacing("base")) auto (spacing("double") + spacing("single"));
+        // margin: (spacing("double") + spacing("base")) auto (spacing("double") + spacing("single"));
         padding: 0;
         height: auto;
 
