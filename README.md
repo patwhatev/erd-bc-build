@@ -8,3 +8,7 @@ nvm use 12
 
 # Install stencil
 stencil start
+
+# Build and deploy
+stencil build
+stencil push
