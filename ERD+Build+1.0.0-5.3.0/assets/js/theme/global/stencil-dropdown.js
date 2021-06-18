@@ -44,8 +44,10 @@ export default class StencilDropdown {
             }
 
             if ($container.hasClass('is-open')) {
+                console.log('BIGGG PENISSS');
                 this.hide($container, event);
             } else {
+                console.log('BIGGG PENISSS');
                 this.show($container, event, style);
             }
         });

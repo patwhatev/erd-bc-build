@@ -276,3 +276,17 @@
 
     }
 }
+
+#menu .navPages ul.navPages-list > li.navPages-item:hover > a + div.navPage-subMenu {
+  display: block;
+  width: 12%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+@media all and (max-width:800px) {
+#menu .navPages ul.navPages-list > li.navPages-item:hover > a + div.navPage-subMenu {
+    display: none;
+}
+#menu .navPages ul.navPages-list > li.navPages-item > a + div.navPage-subMenu.is-open {
+    display: block;
+}
+}
