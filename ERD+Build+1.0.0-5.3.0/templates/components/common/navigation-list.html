@@ -21,7 +21,7 @@
         {{#each children}}
             <li class="navPage-subMenu-item">
                 {{#if children}}
-                    <a class="navPage-subMenu-action navPages-action has-subMenu{{#if is_active}} activePage{{/if}}"
+                    <!-- <a class="navPage-subMenu-action navPages-action has-subMenu{{#if is_active}} activePage{{/if}}"
                        href="{{url}}"
                        aria-label="{{name}}"
                     >
@@ -36,7 +36,7 @@
                                 <svg><use xlink:href="#icon-chevron-down" /></svg>
                             </i>
                         </span>
-                    </a>
+                    </a> -->
                     <ul class="navPage-childList" id="navPages-{{id}}">
                         {{#each children}}
                         <li class="navPage-childList-item">

@@ -189,8 +189,8 @@
 .navPages-action {
     color: stencilColor("navPages-color");
     display: block;
-    font-size: fontSize("smaller");
-    font-weight: fontWeight("bold");
+    font-size: 13px;
+    font-weight: 500;
     padding: spacing("half") 0;
     text-decoration: none;
     text-transform: uppercase;
@@ -317,7 +317,7 @@
     @include breakpoint("medium") {
         // scss-lint:disable ImportantRule
         background-color: stencilColor("navPages-subMenu-backgroundColor");
-        padding: spacing("single") spacing("single") (spacing("single") + spacing("half")) !important;
+        /*padding: spacing("single") spacing("single") (spacing("single") + spacing("half")) !important;*/
         position: absolute;
         text-align: left;
 
@@ -405,8 +405,8 @@
 
     @include breakpoint("medium") {
         .navPage-subMenu-action {
-            padding-left: spacing("single");
-            padding-right: spacing("single");
+            padding-left: spacing("single") / 2;
+            padding-right: spacing("single") / 2;
             width: 100%;
         }
     }

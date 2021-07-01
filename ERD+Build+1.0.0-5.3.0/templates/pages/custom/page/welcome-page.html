@@ -1,0 +1,46 @@
+<style>
+body {background-color: black;}
+h1   {color: white;}
+p    {color: red;}
+button {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 9px 11px;
+	color: white;
+	background-color: black;
+	border: solid white .5px;
+	margin-left: 100%;
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+	color:white;
+}
+.content-zone {
+	width:200px;
+    height:200px;
+    position: fixed;
+    background-color: black;
+    top: 50%;
+    left: 42%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+.logo-img {
+	width: 330px;
+	padding: 20px;
+	margin-left: 5%;
+}
+</style>
+<title>Enfants Riches Deprimes</title>
+<link rel="shortcut icon" href="https://cdn11.bigcommerce.com/s-7xrg1ndguv/product_images/favicon.png?t=1615597301"/>
+
+<img class="logo-img" src="https://cdn11.bigcommerce.com/s-7xrg1ndguv/product_images/uploaded_images/site_assets/ERD_LOGO_WHITE.png" alt="automne-hiver-collection-15" />
+
+<br></br>
+<div class="content-zone">
+	<div class="container">
+        {{#block "page"}} {{/block}}
+        {{{page.content}}}
+    </div>
+	<button onclick="document.location.href='/landing'" type="button"><a href="/landing">enter</a></button>
+</div>

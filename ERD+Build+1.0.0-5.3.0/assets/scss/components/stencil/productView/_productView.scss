@@ -125,7 +125,7 @@
 // -----------------------------------------------------------------------------
 
 .productView-details {
-    padding-bottom: spacing("single") + spacing("third");
+    /*padding-bottom: spacing("single") + spacing("third");*/
 
     &.product-options {
         overflow: hidden; // 1
@@ -138,7 +138,7 @@
 
 .productView-product {
     @include breakpoint("medium") {
-        border-bottom: container("border");
+        /*border-bottom: container("border");*/
         padding-bottom: spacing("single") + spacing("third");
     }
 
@@ -150,6 +150,9 @@
 .productView-title {
     font-size: fontSize("small");
     margin: -(spacing("half")) 0 spacing("quarter");
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    color: black;
+    font-weight: 800;
 
     @include breakpoint("medium") {
         margin-top: spacing("single");
@@ -184,8 +187,8 @@
 // -----------------------------------------------------------------------------
 
 .productView-price {
-    font-size: fontSize("smaller");
-    margin-bottom: spacing("third");
+    font-size: 14px !important; /* i was here*/
+    /*margin-bottom: spacing("third");*/
 
     @include breakpoint("medium") {
         font-size: fontSize("larger");

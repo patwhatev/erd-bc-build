@@ -213,7 +213,7 @@
         "header": "Comparing {products, plural, one {# Product} other {# Products}}",
         "remove": "Remove",
         "no_remove": "At least 2 products are needed to make a valid comparison.",
-        "add_to_cart": "Add to cart"
+        "add_to_cart": "ADD TO CART"
     },
     "category": {
         "label": "Categories",
@@ -736,7 +736,7 @@
             "hide": "Hide Videos",
             "show": "Show Videos"
         },
-        "add_to_cart": "Add to Cart",
+        "add_to_cart": "ADD TO CART",
         "adding_to_cart": "Adding to cart…",
         "options": "Options",
         "none": "None",

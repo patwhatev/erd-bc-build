@@ -10,20 +10,20 @@
             {{/if}}
             {{#if ../theme_settings.navigation_design '===' 'alternate'}}
                 <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="{{url}}" data-collapsible="navPages-{{hyphenate (toLowerCase name)}}">
-                                  {{name}} <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down" /></svg></i>
-                              </a>
-                              <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-{{hyphenate (toLowerCase name)}}" aria-hidden="true" tabindex="-1">
-                                <ul class="navPage-subMenu-list">
-                                    <li class="navPage-subMenu-item-parent">
-                                        <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{name}}</a>
-                                    </li>
-                                    {{#each subcategories}}
-                                        <li class="navPage-subMenu-item-parent">
-                                          <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{name}}</a>
-                                      </li>
-                                    {{/each}}
-                                </ul>
-                            </div>
+                                  {{name}}
+                </a>
+                <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-{{hyphenate (toLowerCase name)}}" aria-hidden="true" tabindex="-1">
+                  <ul class="navPage-subMenu-list">
+                      <li class="navPage-subMenu-item-parent">
+                          <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{name}}</a>
+                      </li>
+                      {{#each subcategories}}
+                          <li class="navPage-subMenu-item-parent">
+                            <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{name}}</a>
+                        </li>
+                      {{/each}}
+                  </ul>
+              </div>
                 <!-- {{> components/common/navigation-list-alternate}} -->
             {{/if}}
             </li>
@@ -34,7 +34,7 @@
                       {{#if ../theme_settings.navigation_design '===' 'simple'}}
                         {{#if children}}
                           <a class="navPages-action has-subMenu" href="{{url}}" data-collapsible="navPages-{{hyphenate (toLowerCase name)}}">
-                          {{name}} <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down" /></svg></i>
+                          {{name}}
                           </a>
                           <div class="navPage-subMenu" id="navPages-{{hyphenate (toLowerCase name)}}" aria-hidden="true" tabindex="-1">
                           <ul class="navPage-subMenu-list">
@@ -55,7 +55,7 @@
                         {{#if ../theme_settings.navigation_design '===' 'alternate'}}
                           {{#if children}}
                               <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="{{url}}" data-collapsible="navPages-{{hyphenate (toLowerCase name)}}">
-                                  {{name}} <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down" /></svg></i>
+                                  {{name}}
                               </a>
                               <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-{{hyphenate (toLowerCase name)}}" aria-hidden="true" tabindex="-1">
                                 <ul class="navPage-subMenu-list">
@@ -119,7 +119,7 @@
                 </div>
             </li>
         {{/if}}
-        {{#if settings.gift_certificates_enabled}}
+        <!-- {{#if settings.gift_certificates_enabled}}
             <li class="navPages-item">
                 <a class="navPages-action"
                    href="{{urls.gift_certificate.purchase}}"
@@ -147,8 +147,8 @@
                     <span class="countPill countPill--positive countPill--alt"></span>
                 </a>
             </li>
-        {{/if}}
-        {{#if customer}}
+        {{/if}} -->
+        <!-- {{#if customer}}
             <li class="navPages-item">
                 <a class="navPages-action has-subMenu"
                    href="{{urls.account.index}}"
@@ -259,11 +259,11 @@
                     </a>
                 {{/if}}
             </li>
-        {{/if}}
-        {{#if theme_settings.social_icon_placement_top}}
+        {{/if}} -->
+        <!-- {{#if theme_settings.social_icon_placement_top}}
             <li class="navPages-item">
                 {{> components/common/social-links}}
             </li>
-        {{/if}}
+        {{/if}} -->
     </ul>
 </nav>

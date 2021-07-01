@@ -236,6 +236,11 @@
                         <span data-product-stock>{{product.stock_level}}</span>
                     </label>
                 </div>
+                {{#if theme_settings.show_product_details_tabs}}
+                    {{> components/products/description-tabs}}
+                {{else}}
+                    {{> components/products/description}}
+                {{/if}}
                 {{> components/products/add-to-cart}}
                 {{#if product.out_of_stock}}
                     {{#if product.out_of_stock_message}}
@@ -253,11 +258,7 @@
     </section>
 
     <article class="productView-description"{{#if schema}} itemprop="description"{{/if}}>
-        {{#if theme_settings.show_product_details_tabs}}
-            {{> components/products/description-tabs}}
-        {{else}}
-            {{> components/products/description}}
-        {{/if}}
+        <!-- description was in the bottom, i moved it up into details -->
     </article>
 </div>
 

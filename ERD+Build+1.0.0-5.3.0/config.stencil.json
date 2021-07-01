@@ -2,7 +2,10 @@
   "customLayouts": {
     "brand": {},
     "category": {},
-    "page": {},
+    "page": {
+    	"welcome-page.html":"/welcome/",
+    	"custom-page.html":"/custom/"
+    },
     "product": {}
   },
   "normalStoreUrl": "https://store-7xrg1ndguv.mybigcommerce.com",

@@ -33,7 +33,7 @@
 }
 
 .tab-title {
-    padding: spacing("half") + spacing("quarter") 0;
+    /*padding: spacing("half") + spacing("quarter") 0;*/
     text-align: center;
     text-decoration: $tab-title-text-decoration;
 
@@ -69,7 +69,7 @@
         &.is-active {
             height: auto;
             overflow: visible;
-            padding: $tabs-content-padding;
+            /*padding: $tabs-content-padding;*/
             visibility: visible;
         }
         // scss-lint:enable NestingDepth

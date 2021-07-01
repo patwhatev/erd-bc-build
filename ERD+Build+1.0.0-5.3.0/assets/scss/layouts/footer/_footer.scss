@@ -17,6 +17,8 @@
     // border-top: container("border");
     padding: spacing("double") 0;
     position: relative;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer-title-sr-only {
@@ -42,7 +44,7 @@
     color: stencilColor("color-textSecondary");
     display: inline-block;
     float: none;
-    font-size: fontSize("base"); // 2
+    font-size: 11px;
     margin-bottom: spacing("double");
     text-align: center;
     vertical-align: top;
