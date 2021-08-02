@@ -9,22 +9,7 @@
                 {{> components/common/navigation-list}}
             {{/if}}
             {{#if ../theme_settings.navigation_design '===' 'alternate'}}
-                <a class="navPages-action navPages-action-depth-max has-subMenu is-root" href="{{url}}" data-collapsible="navPages-{{hyphenate (toLowerCase name)}}">
-                                  {{name}}
-                </a>
-                <div class="navPage-subMenu navPage-subMenu-horizontal" id="navPages-{{hyphenate (toLowerCase name)}}" aria-hidden="true" tabindex="-1">
-                  <ul class="navPage-subMenu-list">
-                      <li class="navPage-subMenu-item-parent">
-                          <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{name}}</a>
-                      </li>
-                      {{#each subcategories}}
-                          <li class="navPage-subMenu-item-parent">
-                            <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{name}}</a>
-                        </li>
-                      {{/each}}
-                  </ul>
-              </div>
-                <!-- {{> components/common/navigation-list-alternate}} -->
+                {{> components/common/navigation-list-alternate}}
             {{/if}}
             </li>
         {{/each}}

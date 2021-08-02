@@ -61,7 +61,7 @@
             "update": "Update shipping cost"
         },
         "preview": {
-            "checkout_now": "Check out now",
+            "checkout_now": "Check out",
             "checkout_multiple": "or check out with multiple addresses",
             "view_cart": "View Cart"
         },

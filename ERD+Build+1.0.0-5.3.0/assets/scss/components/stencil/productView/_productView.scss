@@ -49,12 +49,26 @@
         @include lazy-loaded-img;
         max-height: 100%;
         width: 100%;
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
         object-fit: contain;
         /* Object-fit polyfill */
         font-family: 'object-fit: contain;';
     }
 
     @include lazy-loaded-padding('product_size');
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .productView-thumbnails {

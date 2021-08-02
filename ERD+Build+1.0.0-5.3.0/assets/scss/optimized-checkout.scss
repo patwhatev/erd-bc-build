@@ -19,6 +19,13 @@
     outline-color: stencilColor("optimizedCheckout-colorFocus");
 }
 
+// // Helvetica,Arial,Verdana,sans-serif;
+
+h1, h2, h3, p, a, span, label, input, h4, h5, h6 {
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    text-transform: uppercase;
+}
+
 .optimizedCheckout-header {
     background-color: stencilColor("optimizedCheckout-header-backgroundColor");
     // scss-lint:disable StringQuotes

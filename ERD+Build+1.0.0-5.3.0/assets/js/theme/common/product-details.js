@@ -366,7 +366,7 @@ export default class ProductDetails extends ProductDetailsBase {
             } else {
                 this.$overlay.show();
                 // if no modal, redirect to the cart page
-                this.redirectTo(response.data.cart_item.cart_url || this.context.urls.cart);
+                // this.redirectTo(response.data.cart_item.cart_url || this.context.urls.cart);
             }
         });
 
