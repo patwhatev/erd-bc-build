@@ -249,6 +249,10 @@
                         {{> components/common/alert/alert-error (lang 'products.sold_out')}}
                     {{/if}}
                 {{/if}}
+
+                {{#if product.stock_level '<' 2 }}
+                    {{> components/common/alert/alert-error ('Only 1 left in stock')}}
+                {{/if}}
             </form>
             {{#if settings.show_wishlist}}
                 {{> components/common/wishlist-dropdown}}

@@ -648,7 +648,7 @@ $card-preview-zoom-bottom-offset:       6rem;
 
 .previewCartAction {
     @include grid-row;
-    border-top: container("border");
+    /*border-top: container("border");*/
     display: block;
 
     @include breakpoint("xxsmall") {
@@ -694,3 +694,18 @@ $card-preview-zoom-bottom-offset:       6rem;
     padding: spacing("double");
     text-align: center;
 }
+
+.previewCartAction a{
+    border:none;
+}
+
+.previewCartAction a:hover {
+    font-style: italic;
+    color: #808080;
+}
+
+.PayPalExpressCheckout {
+    display: none;
+}
+
+

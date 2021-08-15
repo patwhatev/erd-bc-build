@@ -210,6 +210,10 @@ a {
     box-shadow: 0 4px 8px transparentize(stencilColor("optimizedCheckout-orderSummary-borderColor"), 0.5);
 }
 
+.redeemable-label {
+    display: none;
+}
+
 .optimizedCheckout-orderSummary-cartSection {
     border-color: stencilColor("optimizedCheckout-orderSummary-borderColor");
 }
@@ -385,4 +389,18 @@ $optimizedCheckout-input--error-boxShadow: 0 0 3px transparentize(stencilColor("
 .optimizedCheckout-loadingToaster {
     background-color: stencilColor("optimizedCheckout-loadingToaster-backgroundColor");
     color: stencilColor("optimizedCheckout-loadingToaster-textColor");
+}
+
+/*Extra stuff*/
+
+.checkout-form .form-checklist-item:nth-child(2) {
+    display:none;
+}
+
+.checkout-form .form-checklist-item:nth-child(3) {
+    display:none;
+}
+
+.checkout-form .cardIcon {
+    display:none;
 }

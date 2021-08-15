@@ -443,9 +443,9 @@ export default class Cart extends PageManager {
 
     bindEvents() {
         this.bindCartEvents();
-        this.bindPromoCodeEvents();
-        this.bindGiftWrappingEvents();
-        this.bindGiftCertificateEvents();
+        // this.bindPromoCodeEvents();
+        // this.bindGiftWrappingEvents();
+        // this.bindGiftCertificateEvents();
 
         // initiate shipping estimator module
         this.shippingEstimator = new ShippingEstimator($('[data-shipping-estimator]'));

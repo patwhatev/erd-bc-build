@@ -114,7 +114,7 @@
 }
 
 .productView-thumbnail-link {
-    border: container("border");
+    /*border: container("border");*/
     display: inline-flex;
     height: 67px;
     max-width: 75px;
@@ -126,7 +126,7 @@
 
     &:hover,
     &.is-active {
-        border-color: color("greys", "darker");
+        /*border-color: color("greys", "darker");*/
     }
 }
 
