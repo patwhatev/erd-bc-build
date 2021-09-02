@@ -67,7 +67,7 @@
 // -----------------------------------------------------------------------------
 
 .navPages {
-    background-color: $navPages-backgroundColor;
+    background-color: white;
     height: 100%;
     margin: 0 3% !important;
     overflow-y: auto;
@@ -85,6 +85,7 @@
 
     ul {
         list-style: none;
+        width: 160px;
     }
 
     .navPage-subMenu-list {
@@ -113,7 +114,7 @@
     }
 
     + .navPages-list {
-        border-top: 1px solid $navPages-list--user-borderColor;
+        /*border-top: 1px solid $navPages-list--user-borderColor;*/
         margin-top: spacing("half");
         padding-top: spacing("half");
     }
@@ -191,9 +192,13 @@
     display: block;
     font-size: 13px;
     font-weight: 500;
-    padding: spacing("half") 0;
+    padding: 2px 35px;
     text-decoration: none;
     text-transform: uppercase;
+
+    @include breakpoint("small") {
+        padding: 0;
+    }
 
     &.has-subMenu {
         .navPages-list:not(.navPages-list-depth-max) & {
@@ -214,10 +219,10 @@
 
     @include breakpoint("medium") {
         display: inline-block;
-        padding: spacing("half") (spacing("half") + spacing("quarter")) (spacing("half") + spacing("quarter"));
+        padding: 2px 35px;
 
         &.is-open {
-            background-color: $navPage-subMenu-item--is-highlighted-background;
+            /*background-color: black;*/
         }
     }
 
@@ -362,7 +367,7 @@
     &.is-open {
         @include breakpoint("medium") {
             border-left: 1px solid stencilColor("navPages-subMenu-separatorColor");
-            display: inherit;
+            display: contents;
             height: $navPage-subMenu-horizontal-height;
             margin-left: $navPage-subMenu-horizontal-width;
             padding: 0 !important; // scss-lint:disable ImportantRule
@@ -424,7 +429,8 @@
     }
 
     @include breakpoint("medium") {
-        padding: spacing("half") 0 (spacing("half") + spacing("quarter"));
+        padding: 3px 0px;
+        margin-left: 70px;
     }
 
     .collapsible-icon-wrapper {
@@ -461,7 +467,7 @@
 // -----------------------------------------------------------------------------
 
 .navPages-quickSearch {
-    border-bottom: container("border");
+    /*border-bottom: container("border");*/
     margin-bottom: spacing("half");
 
     @include breakpoint("medium") {
@@ -508,5 +514,18 @@
         a {
             padding: spacing("half") spacing("single");
         }
+    }
+}
+
+
+/*custom shit*/
+
+@media all and (max-width:800px) {
+    .navPages-action {
+        padding: 12px 5px;
+    }
+
+    .navpages {
+        background-color: white;
     }
 }

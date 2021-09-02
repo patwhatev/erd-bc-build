@@ -277,14 +277,14 @@
     }
 }
 
-#menu .navPages ul.navPages-list > li.navPages-item:hover > a + div.navPage-subMenu {
+/*#menu .navPages ul.navPages-list > li.navPages-item:hover > a + div.navPage-subMenu {
     display: block;
     background-color: rgba(255, 255, 255, 1);
 }
 
 #menu .navPages ul.navPages-list > li.navPages-item:hover > a[href="/defile/"] + div.navPage-subMenu {
     width: auto;
-}
+}*/
 
 @media all and (max-width:800px) {
     #menu .navPages ul.navPages-list > li.navPages-item:hover > a + div.navPage-subMenu {
