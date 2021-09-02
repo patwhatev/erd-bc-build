@@ -10,5 +10,5 @@ nvm use 12
 stencil start
 
 # Build and deploy
-stencil build
+stencil bundle
 stencil push
