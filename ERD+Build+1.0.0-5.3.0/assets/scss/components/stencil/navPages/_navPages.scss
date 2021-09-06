@@ -70,6 +70,8 @@
     background-color: white;
     height: 100%;
     margin: 0 3% !important;
+    position: absolute;
+    transition: .3s;
     overflow-y: auto;
     padding: spacing("single");
 
