@@ -18,7 +18,7 @@
     }
 
     .form-label {
-        color: $actionBar-form-label-color;
+        color: black !important;
         font-size: $actionBar-form-label-fontSize;
         line-height: $actionBar-form-label-lineHeight;
         margin-bottom: 0;
@@ -39,7 +39,7 @@
     }
 
     .form-select {
-        color: stencilColor("color-textLink");
+        color: black;
         height: $input-small-height - remCalc($input-border-width * 2);
     }
 }

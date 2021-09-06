@@ -148,6 +148,7 @@
 
 .form-label--alternate {
     font-family: fontFamily("headingSans");
+    color: black;
     font-size: fontSize("smallest");
     margin-bottom: spacing("half");
 }
@@ -184,6 +185,10 @@
 .form-fileDescription {
     color: color("greys", "light");
     font-size: fontSize("smallest");
+}
+
+.form-select {
+    color: #333;
 }
 
 .form-field-group {

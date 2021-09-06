@@ -8,9 +8,8 @@
 
 .form-select {
     appearance: none;
-    background-image: $select-backgroundImage;
     background-position: $select-backgroundPosition;
-    border-radius: $select-borderRadius;
+    border-color: white;
     padding: $select-padding;
 
     &:hover {

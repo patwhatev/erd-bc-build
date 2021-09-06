@@ -140,6 +140,7 @@
 
 .productView-details {
     /*padding-bottom: spacing("single") + spacing("third");*/
+    text-align: center;
 
     &.product-options {
         overflow: hidden; // 1
@@ -201,6 +202,7 @@
 // -----------------------------------------------------------------------------
 
 .productView-price {
+    margin-top: 2em;
     font-size: 14px !important; /* i was here*/
     /*margin-bottom: spacing("third");*/
 
@@ -302,7 +304,7 @@
 .productView-options {
     @include clearfix;
     margin-bottom: spacing("single");
-    text-align: center;
+    text-align: center !important;
 
     @include breakpoint("small") {
         text-align: left;
@@ -443,4 +445,8 @@
         max-width: none;
         width: auto;
     }
+}
+
+.form-select option{
+    text-align: center;
 }
