@@ -71,6 +71,7 @@ $card-preview-zoom-bottom-offset:       6rem;
     display: block; // 1
     margin-bottom: spacing("single");
     width: 100%;
+    border: none !important
 
     @include breakpoint("medium") {
         display: table; // 1

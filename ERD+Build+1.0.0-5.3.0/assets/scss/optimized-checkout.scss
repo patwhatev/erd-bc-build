@@ -19,12 +19,30 @@
     outline-color: stencilColor("optimizedCheckout-colorFocus");
 }
 
+.checkoutHeader-logo {
+    width: 220px !important;
+}
+
 // // Helvetica,Arial,Verdana,sans-serif;
 
-h1, h2, h3, p, a, span, label, input, h4, h5, h6 {
+h1, h2, h3, p, a, label, input, h4, h5, h6, legend, small, option, button, span {
     font-family: Helvetica,Arial,Verdana,sans-serif;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
+    font-size: .8em !important;
 }
+
+legend {
+    font-size: .7em !important;
+}
+
+.checkoutHeader-logo {
+    margin-left: -5px;
+}
+
+span, h2, .product, .optimizedCheckout-contentPrimary {
+    font-size: .9em !important;
+}
+
 
 .optimizedCheckout-header {
     background-color: stencilColor("optimizedCheckout-header-backgroundColor");
@@ -32,7 +50,7 @@ h1, h2, h3, p, a, span, label, input, h4, h5, h6 {
     background-image: url(stencilImage('optimizedCheckout-backgroundImage', 'optimizedCheckout-backgroundImage-size'));
     // scss-lint:enable StringQuotes
     background-size: cover;
-    border-color: stencilColor("optimizedCheckout-header-borderColor");
+    border-color: white;
     color: stencilColor("optimizedCheckout-header-textColor");
 
     //
@@ -206,8 +224,8 @@ a {
 
 .optimizedCheckout-orderSummary {
     background-color: stencilColor("optimizedCheckout-orderSummary-backgroundColor");
-    border-color: stencilColor("optimizedCheckout-orderSummary-borderColor");
-    box-shadow: 0 4px 8px transparentize(stencilColor("optimizedCheckout-orderSummary-borderColor"), 0.5);
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .redeemable-label {
@@ -215,11 +233,9 @@ a {
 }
 
 .optimizedCheckout-orderSummary-cartSection {
-    border-color: stencilColor("optimizedCheckout-orderSummary-borderColor");
 }
 
 .optimizedCheckout-checkoutStep {
-    border-color: stencilColor("optimizedCheckout-step-borderColor");
 }
 
 //
@@ -229,15 +245,36 @@ a {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-step {
-    background-color: stencilColor("optimizedCheckout-step-backgroundColor");
+    display:none;
+    /*background-color: white;
 
     &::before {
         color: stencilColor("optimizedCheckout-step-textColor");
     }
 
     svg {
-        fill: stencilColor("optimizedCheckout-step-textColor");
-    }
+        fill: white !important;
+    }*/
+}
+
+.checkout-step {
+    border-bottom: none !important;
+}
+
+.stepHeader-title {
+    margin: 0 !important;
+}
+
+.stepHeader-row {
+    border-bottom: solid .3px stencilColor("optimizedCheckout-formField-borderColor");
+}
+
+.stepHeader-suggestion {
+    border: none !important;
+}
+
+legend[data-test="shipping-address-heading"] {
+    color: white;
 }
 
 //
