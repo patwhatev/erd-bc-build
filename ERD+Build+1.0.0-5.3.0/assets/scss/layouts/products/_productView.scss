@@ -31,6 +31,11 @@
     }
 }
 
+#form-action-addToCart {
+    background-color: black !important;
+    color: white;
+}
+
 .productView-images {
     @include grid-column(12);
     padding-left: spacing("base");
