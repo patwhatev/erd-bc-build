@@ -6,9 +6,13 @@ h1, h2, h3, p, label, input, h4, h5, h6, legend, small, option, button, span {
     font-family: Helvetica,Arial,Verdana,sans-serif;
     text-transform: uppercase !important;
     font-size: .9em !important;
-    color: black;
+    color: #333;
 }
 
 legend {
     font-size: .7em !important;
+}
+
+.collection-img {
+	max-height: 590px !important;
 }

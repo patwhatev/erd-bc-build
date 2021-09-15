@@ -65,6 +65,7 @@
     // margin: 0 remCalc($header-toggle-width); // 2
     text-align: left;
     height: $header-height;
+    margin-top: -40px;
 
     @include breakpoint("small") { // 4
         margin-left: remCalc($header-toggle-width * 1.5);
@@ -297,6 +298,10 @@
 }
 
 h1, h2, h3, h4, h5, h6, h7, a, span, p, div, button {
-    text-size: .8em !important;
+    font-size: 11px !important;
     font-family: Helvetica,Arial,Verdana,sans-serif;
+}
+
+.header-logo-image {
+    margin-left: -9px;
 }

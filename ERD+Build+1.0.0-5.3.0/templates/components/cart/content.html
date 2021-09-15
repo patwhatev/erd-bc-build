@@ -53,13 +53,13 @@
                             {{/each}}
                         </dl>
 
-                        <a href="#"
+                        <!-- <a href="#"
                            data-item-edit="{{id}}"
                            data-product-id="{{product_id}}"
                            aria-label="{{lang 'products.change_product_options' name=name}}"
                         >
                             {{lang 'common.change'}}
-                        </a>
+                        </a> -->
                     {{/if}}
 
                     {{#if type '==' 'GiftCertificate'}}
@@ -154,6 +154,7 @@
                                 data-confirm-delete="{{lang 'cart.confirm_delete'}}"
                                 aria-label="{{lang 'cart.remove_item' name=name}}"
                         >
+
                             <svg><use xlink:href="#icon-close"></use></svg>
                         </button>
                     {{/or}}

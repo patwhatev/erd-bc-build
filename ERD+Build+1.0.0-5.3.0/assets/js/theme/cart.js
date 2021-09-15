@@ -263,16 +263,17 @@ export default class Cart extends PageManager {
         $('.cart-remove', this.$cartContent).on('click', event => {
             const itemId = $(event.currentTarget).data('cartItemid');
             const string = $(event.currentTarget).data('confirmDelete');
-            swal.fire({
-                text: string,
-                icon: 'warning',
-                showCancelButton: true,
-            }).then((result) => {
-                if (result.value) {
-                    // remove item from cart
-                    cartRemoveItem(itemId);
-                }
-            });
+            // swal.fire({
+            //     text: string,
+            //     icon: 'warning',
+            //     showCancelButton: true,
+            // }).then((result) => {
+            //     if (result.value) {
+            //         // remove item from cart
+            //         cartRemoveItem(itemId);
+            //     }
+            // });
+            cartRemoveItem(itemId);
             event.preventDefault();
         });
 

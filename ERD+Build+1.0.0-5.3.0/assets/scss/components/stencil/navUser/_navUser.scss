@@ -25,7 +25,7 @@
     z-index: zIndex("lowest"); // 5.
 
     @include breakpoint("medium") {
-        padding: 0 spacing("single");
+        padding: 14px spacing("single");
         position: relative;
         right: auto;
         top: auto;

@@ -260,9 +260,11 @@
 .form-increment {
     .button {
         margin: 0;
-        padding: remCalc(3px) remCalc(5px);
+        padding: remCalc(1px) remCalc(2px);
+        border: white solid 1px;
     }
 }
+
 
 .form-input--incrementTotal {
     border: 0;
