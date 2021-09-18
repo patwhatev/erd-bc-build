@@ -23,6 +23,14 @@
     width: 220px !important;
 }
 
+#checkout-customer-guest .form-body p {
+    display: none;
+}
+
+label[for="email"] {
+    padding: 10px 0px;
+}
+
 // // Helvetica,Arial,Verdana,sans-serif;
 
 h1, h2, h3, p, a, label, input, h4, h5, h6, legend, small, option, button, span {

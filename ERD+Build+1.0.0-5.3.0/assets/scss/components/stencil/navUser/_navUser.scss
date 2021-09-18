@@ -132,6 +132,11 @@
     }
 }
 
+.navUser a {
+    padding: 30px;
+}
+
+
 .navUser-action-divider {
     border-right: container("border");
     color: stencilColor("color-textSecondary");
@@ -214,7 +219,8 @@
 }
 
 .navUser-item-cartLabel {
-    display: none;
+    /*display: none;*/
+    color: #333;
 
     @include breakpoint("small") {
         display: inline;

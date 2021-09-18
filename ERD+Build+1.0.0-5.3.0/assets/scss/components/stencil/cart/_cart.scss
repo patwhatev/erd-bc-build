@@ -84,8 +84,12 @@ $card-preview-zoom-bottom-offset:       6rem;
 
 .page-content {
     margin-top: 80px;
-    /*margin-left: 80px !important;*/
-    width: 90% !important;
+    /*margin-left: -25% !important;*/
+
+    @include breakpoint("medium") {
+        width: 90% !important;
+        margin-left: 0 !important;
+    }
 }
 
 .cart-quantity {

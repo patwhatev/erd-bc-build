@@ -69,6 +69,7 @@
 .navPages {
     background-color: white;
     height: 100%;
+    width: 100%;
     margin: 0 3% !important;
     position: absolute;
     transition: .3s;
@@ -84,6 +85,9 @@
         padding: 0;
         text-align: left;
     }
+
+    
+    
 
     ul {
         list-style: none;
@@ -525,9 +529,5 @@
 @media all and (max-width:800px) {
     .navPages-action {
         padding: 12px 5px;
-    }
-
-    .navpages {
-        background-color: white;
     }
 }

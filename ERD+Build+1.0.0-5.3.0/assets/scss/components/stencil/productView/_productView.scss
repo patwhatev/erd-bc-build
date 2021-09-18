@@ -24,7 +24,9 @@
 }
 
 .productView-options {
-    margin-right: -29px;
+    @include breakpoint("medium") {
+        margin-right: -29px;
+    }
 }
 
 .productView-options .form-label {

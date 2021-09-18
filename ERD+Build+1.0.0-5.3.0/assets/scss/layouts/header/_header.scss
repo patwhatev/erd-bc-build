@@ -34,10 +34,10 @@
 }
 
 .header {
-    background-color: transparent;
     // border-bottom: container("border");
     position: fixed;
-    top: 0;
+    background-color: white;
+    
     width: 100%;
     z-index: zIndex("higher");
     height: $header-height;
@@ -45,6 +45,8 @@
     @include breakpoint("medium") {
         // border-bottom: container("border");
         overflow: visible;
+            background-color: transparent;
+        top: 0;
         position: relative;
         height: auto;
         display: flex;
@@ -64,6 +66,7 @@
     font-size: 0;   // 1
     // margin: 0 remCalc($header-toggle-width); // 2
     text-align: left;
+    background-color: white;
     height: $header-height;
     margin-top: -40px;
 
@@ -303,5 +306,7 @@ h1, h2, h3, h4, h5, h6, h7, a, span, p, div, button {
 }
 
 .header-logo-image {
-    margin-left: -9px;
+    @include breakpoint("medium") {
+        margin-left: -9px;  
+        }
 }
