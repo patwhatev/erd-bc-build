@@ -28,7 +28,7 @@
         padding: 14px spacing("single");
         position: relative;
         right: auto;
-        top: auto;
+        top: 55px;
         transform: none;
         z-index: zIndex("high");
     }
@@ -221,6 +221,7 @@
 .navUser-item-cartLabel {
     /*display: none;*/
     color: #333;
+
 
     @include breakpoint("small") {
         display: inline;

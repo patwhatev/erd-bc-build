@@ -40,17 +40,18 @@
     
     width: 100%;
     z-index: zIndex("higher");
-    height: $header-height;
+    height: 70px;
+    margin-top: -60px;
 
     @include breakpoint("medium") {
         // border-bottom: container("border");
         overflow: visible;
-            background-color: transparent;
-        top: 0;
+        background-color: transparent;
         position: relative;
         height: auto;
         display: flex;
         flex-direction: column;
+        
     }
 
     &.is-open {
@@ -68,7 +69,7 @@
     text-align: left;
     background-color: white;
     height: $header-height;
-    margin-top: -40px;
+    margin-top: 8px;
 
     @include breakpoint("small") { // 4
         margin-left: remCalc($header-toggle-width * 1.5);
