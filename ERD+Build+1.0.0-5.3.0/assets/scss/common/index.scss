@@ -25,3 +25,9 @@ legend {
 .page-content p iframe {
 	width: 100%;
 }
+
+.cycle-slideshow {
+	@include breakpoint("medium") {
+                    margin-left: 20% !important;
+    }
+}
