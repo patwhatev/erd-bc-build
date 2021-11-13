@@ -7,7 +7,7 @@
 // -----------------------------------------------------------------------------
 
 .productView {
-    padding-top: spacing("base");
+    /*padding-top: spacing("base");*/
 }
 
 
@@ -15,7 +15,7 @@
 // -----------------------------------------------------------------------------
 
 .productView-images {
-    margin-bottom: spacing("double");
+    /*margin-bottom: spacing("double");*/
 }
 
 .productView-options .form-select {
@@ -47,6 +47,7 @@
 
     + .productView-thumbnails {
         margin-top: spacing("half");
+        margin-left: 35%;
     }
 
     @media (min-width: $screen-xxsmall) and (max-width: $screen-medium) {
