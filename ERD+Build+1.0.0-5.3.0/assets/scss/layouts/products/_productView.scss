@@ -75,6 +75,10 @@
     width: 40% !important;
 }
 
+.productView--quickView .productView-product, .productView--quickView .product-options {
+    margin-top: 50px;
+}
+
 .productView-description {
     @include grid-column(12);
     padding-left: spacing("base");
