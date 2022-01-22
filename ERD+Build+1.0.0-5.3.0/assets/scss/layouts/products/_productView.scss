@@ -29,6 +29,11 @@
     .socialLinks-item--print {
         display: none;
     }
+
+    h1, p, button, option, span, select, input {
+        font-size: 9px !important;
+    }
+
 }
 
 #form-action-addToCart {
@@ -64,6 +69,10 @@
     &.product-data {
         order: -1;
     }
+}
+
+.productView--quickView .productView-details {
+    width: 40% !important;
 }
 
 .productView-description {

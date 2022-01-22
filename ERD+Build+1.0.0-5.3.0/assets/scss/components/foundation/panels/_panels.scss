@@ -10,7 +10,12 @@
 .panel--large {
 
     .panel-body {
-        margin-bottom: spacing("single") + spacing("third");
+        margin-bottom: spacing("single") + spacing("third") + spacing("single");
         padding: spacing("single") + spacing("third");
+        background: #fff !important;
     }
+}
+
+div[aria-labelledby="search-results-product-count"] {
+	margin-top: 70px;
 }

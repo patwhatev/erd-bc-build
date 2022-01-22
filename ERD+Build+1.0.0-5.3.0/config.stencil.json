@@ -3,11 +3,12 @@
     "brand": {},
     "category": {},
     "page": {
-    	"welcome-page.html":"/welcome/",
-    	"custom-page.html":"/custom/"
+      "welcome-page.html": "/welcome/",
+      "custom-page.html": "/custom/"
     },
     "product": {}
   },
+  "apiHost": "https://api.bigcommerce.com",
   "normalStoreUrl": "https://store-7xrg1ndguv.mybigcommerce.com",
   "port": "8080"
 }

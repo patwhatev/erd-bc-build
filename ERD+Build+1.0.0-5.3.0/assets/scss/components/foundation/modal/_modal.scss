@@ -44,7 +44,7 @@
 .modal-close {
     @include square($reveal-close-height);
     color: stencilColor("icon-color");
-    font-size: 26px;
+    font-size: 12px;
     line-height: remCalc($reveal-close-height);
     padding: 0;
     position: absolute;
@@ -61,6 +61,14 @@
     }
 
     @include addFocusTooltip;
+}
+
+.modal-close span {
+    font-size: 8px !important;
+}
+
+.modal > :first-child {
+    margin-top: -13px;
 }
 
 .modal-body {

@@ -69,7 +69,7 @@
     "shop_by_price_visibility": false,
     "brandpage_products_per_page": 12,
     "searchpage_products_per_page": 12,
-    "show_product_quick_view": false,
+    "show_product_quick_view": true,
     "show_product_quantity_box": false,
     "show_powered_by": false,
     "shop_by_brand_show_footer": false,
