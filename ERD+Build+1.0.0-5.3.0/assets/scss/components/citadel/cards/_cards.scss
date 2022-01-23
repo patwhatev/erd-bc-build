@@ -25,6 +25,31 @@
     }    
 }
 
+figcaption.quickView-bottom {
+    text-align: center;
+    opacity: .5;
+
+}
+
+figcaption.quickView-bottom .button{
+    color: #E5E4E2;
+
+}
+
+.actionBar {
+    border: solid red 1px;
+    margin-top: -40px;
+    margin-bottom: 160px;
+}
+
+.quickView-bottom:hover .button{
+    color: grey;
+    background-color: #000;
+}
+
+
+
+
 .card-figure {
     margin-top: $card-figure-marginTop;
     position: relative;
