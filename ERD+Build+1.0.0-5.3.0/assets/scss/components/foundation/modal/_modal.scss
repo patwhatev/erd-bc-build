@@ -42,8 +42,6 @@
 }
 
 .modal-close {
-    @include square($reveal-close-height);
-    color: stencilColor("icon-color");
     font-size: 12px;
     line-height: remCalc($reveal-close-height);
     padding: 0;
@@ -60,7 +58,6 @@
         color: stencilColor("icon-color-hover");
     }
 
-    @include addFocusTooltip;
 }
 
 .modal-close span {
