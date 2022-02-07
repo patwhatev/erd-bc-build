@@ -73,9 +73,12 @@
     }
 }
 
-.productView--quickView .productView-details {
-    width: 40% !important;
+@media screen and (min-width: 740px) {
+    .productView--quickView .productView-details {
+        width: 40% !important;
+    }   
 }
+
 
 .productView--quickView .productView-product, .productView--quickView .product-options {
     margin-top: 50px;
