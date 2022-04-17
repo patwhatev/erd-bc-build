@@ -115,8 +115,8 @@
         width: 100%;
 
         @include breakpoint("small") {
-            margin-bottom: 0;
-            width: auto;
+            margin: 20px 0;
+            /*width: auto;*/
         }
 
         // scss-lint:disable NestingDepth

@@ -101,8 +101,8 @@
         margin: 0 auto;
         position: relative;
         text-decoration: none;
-        width: 70%;
-        z-index: zIndex("low");
+        width: 100%;
+        z-index: zIndex("high");
 
         // scss-lint:disable NestingDepth
         @include breakpoint("medium") {

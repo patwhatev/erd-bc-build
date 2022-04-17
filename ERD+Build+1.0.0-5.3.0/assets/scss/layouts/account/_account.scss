@@ -44,6 +44,7 @@
 
 .account-body {
     @include grid-row($behavior: "nest");
+    margin-top: 50px;
 }
 
 .account-content {
