@@ -33,6 +33,8 @@
         z-index: zIndex("high");
     }
 
+
+
     .dropdown-menu {
         background-color: stencilColor("navUser-dropdown-backgroundColor");
         border: 1px solid stencilColor("navUser-dropdown-borderColor");
@@ -134,7 +136,23 @@
 
 .navUser a {
     padding: 30px 14px;
+
+    /*@include breakpoint("small") {
+            padding: 0px !important;
+        }*/
+    @media (max-width: $screen-small) {
+        padding: 15px 0;
+        display: block;
+
+
+    }
+
+
 }
+
+.navUser-item--account a, .navUser-item--cart a {
+            margin-right: 10px;
+        }
 
 
 .navUser-action-divider {
@@ -164,6 +182,14 @@
     }
 }
 
+.navUser-section--alt li{
+    @media (max-width: $screen-small) {
+            display: block;
+            margin-top: 50px;
+            text-align: center
+        }
+}
+
 .navUser-item--cart {
     display: block;
     margin: -15.75px 0 !important;
@@ -178,6 +204,8 @@
 
     .navUser-action {
         color: stencilColor("navUser-color");
+
+
 
         // scss-lint:disable NestingDepth
         &:hover,

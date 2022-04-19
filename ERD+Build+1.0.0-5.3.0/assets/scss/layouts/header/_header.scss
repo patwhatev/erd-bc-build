@@ -54,6 +54,11 @@
         
     }
 
+    @include breakpoint("small") {
+        height: 110px;
+        border: red solid 1px;
+    }
+
     &.is-open {
         height: 100%;
 
@@ -61,6 +66,8 @@
             height: auto;
         }
     }
+
+
 }
 
 .header-logo {
@@ -101,7 +108,7 @@
         margin: 0 auto;
         position: relative;
         text-decoration: none;
-        width: 100%;
+        width: 70%;
         z-index: zIndex("high");
 
         // scss-lint:disable NestingDepth
@@ -298,6 +305,18 @@
 
     #menu .navPages ul.navPages-list > li.navPages-item > a + div.navPage-subMenu.is-open {
         display: block;
+    }
+
+    .header {
+        height: 110px;
+    }
+
+    .header-logo-image {
+        margin-top: 15px;
+    }
+
+    .mobileMenu-toggle {
+        margin-top: 15px;
     }
 }
 
