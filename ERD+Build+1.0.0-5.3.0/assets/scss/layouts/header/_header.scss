@@ -56,7 +56,6 @@
 
     @include breakpoint("small") {
         height: 110px;
-        border: red solid 1px;
     }
 
     &.is-open {
