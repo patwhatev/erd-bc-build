@@ -463,7 +463,7 @@ $card-preview-zoom-bottom-offset:       6rem;
 .shipping-estimate-show,
 .gift-certificate-add,
 .gift-certificate-cancel {
-    color: stencilColor("color-textSecondary");
+    color: black;
     padding: 0;
     text-decoration: underline;
     transition: color 0.15s ease;
@@ -481,7 +481,7 @@ $card-preview-zoom-bottom-offset:       6rem;
 .coupon-form,
 .cart-gift-certificate-form {
     @include clearfix;
-    font-size: 0;
+    font-size: 10px;
     margin-bottom: spacing("base");
 
     .form-input,
